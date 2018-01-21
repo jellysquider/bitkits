@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="icon" href="favicon.ico">
+
+        <title>Bit Kits</title>
+
+        <!-- Bootstrap core CSS -->
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/css/bootstrap.min.css" rel="stylesheet" >
+
+        <!-- Custom styles for this template -->
+        <link href="bitkits.css" rel="stylesheet" type="text/css" media="screen">
+
+    </head>
+    <body>
+        <div class="container no-select">
+            <div class="col-md-9 col-lg-12">
+              <p class="lead">Click or press a key to play the sound<br></p>
+          </div>
+          <div class="col-md-9">
+              <div data-key="65" class="key">
+                  <kbd>A</kbd>
+                  <span class="sound">arp</span>
+              </div>
+              <div data-key="83" class="key">
+                  <kbd>S</kbd>
+                  <span class="sound">hihat</span>
+              </div>
+              <div data-key="68" class="key">
+                  <kbd>D</kbd>
+                  <span class="sound">kick</span>
+              </div>
+              <div data-key="70" class="key">
+                  <kbd>F</kbd>
+                  <span class="sound">openhat</span>
+              </div>
+              <div data-key="71" class="key">
+                  <kbd>G</kbd>
+                  <span class="sound">boom</span>
+              </div>
+              <div data-key="72" class="key">
+                  <kbd>H</kbd>
+                  <span class="sound">sfx</span>
+              </div>
+              <div data-key="74" class="key">
+                  <kbd>J</kbd>
+                  <span class="sound">snare</span>
+              </div>
+              <div data-key="75" class="key">
+                  <kbd>K</kbd>
+                  <span class="sound">pulse</span>
+              </div>
+              <div data-key="76" class="key">
+                  <kbd>L</kbd>
+                  <span class="sound">perc</span>
+              </div>
+          </div>
+    </div>
+
+        <audio data-key="65" src="sounds/arp.wav"></audio>
+        <audio data-key="83" src="sounds/hihat.wav"></audio>
+        <audio data-key="68" src="sounds/kick.wav"></audio>
+        <audio data-key="70" src="sounds/openhat.wav"></audio>
+        <audio data-key="71" src="sounds/boom.wav"></audio>
+        <audio data-key="72" src="sounds/sfx.wav"></audio>
+        <audio data-key="74" src="sounds/snare.wav"></audio>
+        <audio data-key="75" src="sounds/pulse.wav"></audio>
+        <audio data-key="76" src="sounds/perc.wav"></audio>
+
+        <script src="script.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js"></script>
+    </body>
+</html>

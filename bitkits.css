@@ -1,0 +1,77 @@
+@font-face {
+    font-family: pixelFont;
+    src: url('led_display-7.ttf');
+}
+
+body,html {
+  font-family: 'pixelFont';
+}
+
+body {
+  margin: 0;
+  padding: 150px 20px 20px 20px;
+  text-align: center;
+}
+
+div {
+    display: inline-block;
+}
+
+.key {
+  border: 2px dashed black;
+  border-radius: 5px;
+  margin: 5px;
+  font-size: 24px;
+  padding: 10px 10px;
+  transition: all .07s;
+  width: 100px;
+  text-align: center;
+
+}
+
+.playing {
+  transform: scale(1.1);
+  border-color: #ffc600;
+  box-shadow: 0 0 10px #ffc600;
+}
+
+kbd {
+  display: block;
+  font-size: 18px;
+  color: black;
+  background-color: #16a085;
+}
+
+.sound {
+  font-size: 12px;
+  text-transform: uppercase;
+}
+
+
+/* disable selecting so it doesn't interfere
+with clicking on constituents of each key */
+.no-select {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome and Opera */
+}
+
+/*MEDIA QUERIES*/
+/* @media (min-width: 992px) {
+}
+
+@media (min-width: 768px) and (max-width: 992px) {
+} */
+
+/* @media (max-width: 767px) (min-width: 414px) {
+} */
+
+@media (max-width: 425px) {
+  body {
+    padding-top: 50px;
+  }
+}
